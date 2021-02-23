@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+
 
 // Components
 import Home from './pages/Home';
-
+import Login from './components/Login';
+import Navbar from './components/Navbar';
 
 const App: React.FC = () => {
   return (
@@ -12,7 +13,8 @@ const App: React.FC = () => {
         <Router>
           <Navbar/>
       <Switch>
-        <Route component={Home} path={'/'}/>
+        <Route exact component={Home} path='/'/>
+        <Route exact component={Login} path='/login'/>
       </Switch>
     </Router>
     </>

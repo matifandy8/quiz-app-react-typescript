@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+  height: 100vh;
   > p {
     color: #fff;
   }
