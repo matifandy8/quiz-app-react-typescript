@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Div = styled.div`
-  background: red;
-  color:white;
+  color:red;
   > 
   
   }
